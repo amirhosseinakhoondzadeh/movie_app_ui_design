@@ -32,8 +32,9 @@ class MovieFilteringChips extends StatelessWidget {
             ),
             backgroundColor: whiteColor,
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(25),
-                side: BorderSide(width: 1, color: Colors.grey)),
+              borderRadius: BorderRadius.circular(25),
+              side: BorderSide(width: 1.5, color: Colors.grey[200]),
+            ),
           );
         },
       ),

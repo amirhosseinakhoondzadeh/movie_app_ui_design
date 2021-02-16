@@ -22,11 +22,14 @@ class _LandingScreenState extends State<LandingScreen> {
         body: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            SizedBox(
+              height: 16,
+            ),
             MovieTabBarView(
               tabs: ["In Theater", "Box Office", "Coming Soon"],
             ),
             SizedBox(
-              height: 16,
+              height: 32,
             ),
             MovieFilteringChips(
               options: ["Action", "Crime", "Comedy", "Drama"],
