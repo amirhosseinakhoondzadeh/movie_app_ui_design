@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:movie_app_ui_design/colors.dart';
 import 'package:movie_app_ui_design/filtering_chips.dart';
 import 'package:movie_app_ui_design/movie_app_bar.dart';
+import 'package:movie_app_ui_design/movie_model.dart';
+import 'package:movie_app_ui_design/movie_view_pager.dart';
 import 'package:movie_app_ui_design/tab_bar_view.dart';
 
 class LandingScreen extends StatefulWidget {
@@ -33,6 +35,30 @@ class _LandingScreenState extends State<LandingScreen> {
             ),
             MovieFilteringChips(
               options: ["Action", "Crime", "Comedy", "Drama"],
+            ),
+            Expanded(
+              child: MovieViewPager(
+                movies: [
+                  MovieModel(
+                    imageUrl:
+                        "https://m.media-amazon.com/images/M/MV5BM2UwMDVmMDItM2I2Yi00NGZmLTk4ZTUtY2JjNTQ3OGQ5ZjM2XkEyXkFqcGdeQXVyMTA1OTYzOTUx._V1_UX182_CR0,0,182,268_AL_.jpg",
+                    name: "Ford v Ferrari",
+                    rate: 8.1,
+                  ),
+                  MovieModel(
+                    imageUrl:
+                        "https://m.media-amazon.com/images/M/MV5BM2UwMDVmMDItM2I2Yi00NGZmLTk4ZTUtY2JjNTQ3OGQ5ZjM2XkEyXkFqcGdeQXVyMTA1OTYzOTUx._V1_UX182_CR0,0,182,268_AL_.jpg",
+                    name: "Ford v Ferrari",
+                    rate: 8.1,
+                  ),
+                  MovieModel(
+                    imageUrl:
+                        "https://m.media-amazon.com/images/M/MV5BM2UwMDVmMDItM2I2Yi00NGZmLTk4ZTUtY2JjNTQ3OGQ5ZjM2XkEyXkFqcGdeQXVyMTA1OTYzOTUx._V1_UX182_CR0,0,182,268_AL_.jpg",
+                    name: "Ford v Ferrari",
+                    rate: 8.1,
+                  )
+                ],
+              ),
             ),
           ],
         ),

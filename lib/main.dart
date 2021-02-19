@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app_ui_design/home.dart';
 import 'package:movie_app_ui_design/landing_screen.dart';
 
 void main() {
